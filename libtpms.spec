@@ -12,6 +12,7 @@ Group:		Libraries
 #Source0Download: https://github.com/stefanberger/libtpms/tags
 Source0:	https://github.com/stefanberger/libtpms/archive/v%{version}/%{name}-%{version}.tar.gz
 # Source0-md5:	8489cc4ade32f63c71697bb36f349c59
+Patch0:		%{name}-x32.patch
 URL:		https://github.com/stefanberger/libtpms
 BuildRequires:	autoconf >= 2.69
 BuildRequires:	automake >= 1.6
@@ -54,6 +55,7 @@ Statyczna biblioteka libtpms.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %{__libtoolize}

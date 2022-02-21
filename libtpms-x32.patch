@@ -1,0 +1,12 @@
+--- libtpms-0.9.2/src/tpm2/TpmProfile.h.orig	2022-01-05 21:59:06.000000000 +0100
++++ libtpms-0.9.2/src/tpm2/TpmProfile.h	2022-02-21 21:56:29.918521366 +0100
+@@ -177,6 +177,9 @@
+ # ifdef THIRTY_TWO_BIT
+ #  define RADIX_BITS                     32
+ # endif
++# ifdef SIXTY_FOUR_BIT
++#  define RADIX_BITS                     64
++# endif
+ # ifdef SIXTY_FOUR_BIT_LONG
+ #  define RADIX_BITS                     64
+ # endif
