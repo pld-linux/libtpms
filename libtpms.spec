@@ -5,13 +5,13 @@
 Summary:	Library providing Trusted Platform Module (TPM) functionality
 Summary(pl.UTF-8):	Biblioteka zapewniająca funkcjonalność modułu TPM (Trusted Platform Module)
 Name:		libtpms
-Version:	0.9.2
+Version:	0.9.4
 Release:	1
 License:	BSD
 Group:		Libraries
 #Source0Download: https://github.com/stefanberger/libtpms/tags
 Source0:	https://github.com/stefanberger/libtpms/archive/v%{version}/%{name}-%{version}.tar.gz
-# Source0-md5:	8489cc4ade32f63c71697bb36f349c59
+# Source0-md5:	7428f3d36d5385507b69b82d0fa9d6bb
 Patch0:		%{name}-x32.patch
 URL:		https://github.com/stefanberger/libtpms
 BuildRequires:	autoconf >= 2.69
