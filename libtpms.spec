@@ -18,6 +18,7 @@ BuildRequires:	autoconf >= 2.69
 BuildRequires:	automake >= 1.6
 BuildRequires:	libtool >= 2:2
 BuildRequires:	openssl-devel
+BuildRequires:	perl-tools-pod
 BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
