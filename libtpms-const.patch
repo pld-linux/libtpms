@@ -1,0 +1,12 @@
+# strstr() returns const char * for const input with glibc 2.43; -Werror=discarded-qualifiers
+--- libtpms-0.10.2.orig/src/tpm_library.c	2026-11-26 07:12:46.647228882 +0100
++++ libtpms-0.10.2/src/tpm_library.c	2026-11-26 07:13:20.114099349 +0100
+@@ -435,7 +435,7 @@
+                                           const char *endtag,
+                                           size_t *length)
+ {
+-    char *start, *end;
++    const char *start, *end;
+     unsigned char *plaintext = NULL;
+ 
+     start = strstr(stream, starttag);
